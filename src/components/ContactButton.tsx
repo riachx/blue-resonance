@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 import '../styles/ContactButton.css'
 
 function ContactButton() {
   return (
-    <button className="contact-btn">
+    <Link to="/contact" className="contact-btn">
       Contact
-    </button>
+    </Link>
   )
 }
 

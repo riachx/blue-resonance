@@ -35,7 +35,7 @@
   color: var(--text-white);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .logo {
@@ -67,6 +67,8 @@
 }
 
 .contact-button {
+  display: inline-block;
+  text-decoration: none;
   background-color: var(--bg-white);
   color: var(--secondary-blue);
   border: none;
@@ -81,6 +83,8 @@
 
 .contact-button:hover {
   background-color: var(--bg-white-alt);
+  color: var(--secondary-blue);
+  text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px var(--shadow-blue-light);
 }
