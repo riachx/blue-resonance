@@ -1,0 +1,48 @@
+:root {
+  /* Primary Colors */
+  --primary-blue: #3B82F6;
+  --primary-blue-dark: #2563EB;
+  --primary-blue-text: #1329D1; 
+  --accent-orange: #FFAA00;
+  
+  /* Secondary Colors */
+  --secondary-blue: #0085F1;
+  --link-blue: #646cff;
+  --link-blue-hover: #535bf2;
+  
+  /* Background Colors */
+  --bg-dark: #242424;
+  --bg-light: #F1F5F9;
+  --bg-light-hover: #E2E8F0;
+  --bg-white: #ffffff;
+  --bg-white-alt: #f8fafc;
+  --bg-blue-footer: #1d34e7;
+  
+  /* Border Colors */
+  --border-light: #E2E8F0;
+  --border-white-10: rgba(255, 255, 255, 0.1);
+  
+  /* Text Colors */
+  --text-white: rgba(255, 255, 255, 0.95);
+  --text-white-70: rgba(255, 255, 255, 0.7);
+  --text-white-87: rgba(255, 255, 255, 0.87);
+  --text-gray: #888;
+
+  /* Button Colors */
+  --btn-blue: #2C41FD;
+  --btn-gray: #EFF1FA;
+  
+  /* Shadow Colors */
+  --shadow-blue: rgba(59, 130, 246, 0.3);
+  --shadow-blue-hover: rgba(59, 130, 246, 0.4);
+  --shadow-blue-light: rgba(59, 130, 246, 0.2);
+  --shadow-black-10: rgba(0, 0, 0, 0.1);
+  --shadow-black-30: rgba(0, 0, 0, 0.3);
+  --shadow-focus: -webkit-focus-ring-color;
+  
+  /* Theme Colors */
+  --color-scheme-light-text: #213547;
+  --color-scheme-light-bg: #ffffff;
+  --color-scheme-light-hover: #747bff;
+  --color-scheme-light-button: #f9f9f9;
+}

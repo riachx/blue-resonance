@@ -1,0 +1,28 @@
+@import './variables.css';
+
+.contact-btn {
+  background-color: var(--btn-blue);
+  color: var(--bg-white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--shadow-blue);
+}
+
+.contact-btn:hover {
+  background-color: var(--primary-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow-blue-hover);
+}
+
+@media (max-width: 768px) {
+  .contact-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+} 

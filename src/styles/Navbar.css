@@ -1,0 +1,114 @@
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-white-10);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.brand-name {
+  font-size: 24px;
+  margin-left: 12px;
+  color: var(--text-white);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+.logo {
+  height: 2.5rem;
+  width: auto;
+  padding: 0;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em var(--link-blue));
+}
+
+.nav-link {
+  color: var(--text-white-87);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--bg-white);
+}
+
+.contact-button {
+  background-color: var(--bg-white);
+  color: var(--secondary-blue);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px var(--shadow-black-10);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.contact-button:hover {
+  background-color: var(--bg-white-alt);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-blue-light);
+}
+
+/* Responsive Design */
+@media (max-width: 1240px) {
+  .navbar-container {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .navbar-right {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .brand-name {
+    font-size: 20px;
+    margin-left: 8px;
+  }
+} 

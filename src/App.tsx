@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from './components/Navbar'
+import './styles/App.css'
+import Blob from './components/Blob'
+import ContactButton from './components/ContactButton'
+import DesignStrategyButton from './components/DesignStrategyButton'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <Navbar />
+      
+      {/* Animated blobs */}
+      <Blob/>
+      
+     
+      
+      <main className="main-content">
+        <div className="hero-section">
+          <div className="hero-left-column">
+            <div className="hero-text">
+              <h1>Delivering <br></br>cutting-edge <span>enterprise mobility</span> and <span>IoT solutions.</span></h1>
+            </div>
+
+            <div className="content-section">
+              <p>Through our expertise in mobile applications, backend services, security, and networking, we transform business strategies into powerful digital experiences.</p>
+            </div>
+            
+            <div className="button-section">
+              <ContactButton />
+              <DesignStrategyButton />
+            </div>
+          </div>
+          <div className="hero-image">
+            <img src="/iphones.png" alt="iPhone devices" className="iphones" />
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 
