@@ -2,6 +2,8 @@
 
 A simple React + TypeScript project built with Vite.
 
+![Landing Page Screenshot](public/landing-page-ss.png)
+
 ## Getting Started
 
 ### Prerequisites
